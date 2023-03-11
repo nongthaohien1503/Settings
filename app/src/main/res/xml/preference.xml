@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory
+        android:title="Saved Values"
+        android:icon="@drawable/baseline_settings_24">
+
+        <EditTextPreference
+            android:maxLines = "1"
+            android:inputType = "number"
+            android:defaultValue="Saved number count"
+            android:key="displayNumber"
+            android:summary="0"
+            app:defaultValue="0"/>
+
+        <ListPreference
+            android:defaultValue="#FFFFFF"
+            android:key="displayColor"
+            android:title="Saved color background"
+            android:entries="@array/ListTitle"
+            android:entryValues="@array/ListValue"
+            android:summary="No color saved"/>
+    </PreferenceCategory>
+
+</PreferenceScreen>
